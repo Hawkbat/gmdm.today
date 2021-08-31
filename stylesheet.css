@@ -1,0 +1,22 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  display: flex;
+  padding: 20px;
+  font-family: sans-serif;
+  color: white;
+  background: #111;
+}
+
+main {
+  width: 550px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
