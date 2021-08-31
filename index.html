@@ -39,12 +39,16 @@
             margin: 20px;
             background: #000;
             border-radius: 10px;
-            padding: 20px;
+            padding: 15px;
             border: 1px solid rgb(47, 51, 54);
         }
 
         a {
             color: rgb(29, 161, 242);
+        }
+
+        h1 {
+            line-height: 50px;
         }
     </style>
 </head>
@@ -57,7 +61,7 @@
         <div id="prevTweets"></div>
     </main>
     <aside>
-        People often say "Wow, girl_dm_! I completely forgot what day it was until I saw you post that good morning tweet! If only there was some grossly overengineered way to keep consistent track of what day it was by automatically checking your twitter feed!" Well, these people are in luck!
+        People often say "Wow, girl_dm_! I completely forgot what day it was until I saw you post that good morning tweet! If only there was some grossly overengineered way to keep track of what day it was by automatically checking your twitter feed!" Well, these people are in luck!
         <br><br>
         - <a href="https://twitter.com/HawkbarGaming">@HawkbarGaming</a>
     </aside>
@@ -93,7 +97,7 @@
                     }))
                 }).then(() => {
                     if (!foundToday) {
-                        todayContainer.textContent = 'unknown??? no gmdm tweet yet :('
+                        todayContainer.textContent = 'idk??? no gmdm tweet yet today :('
                     }
                 })
     </script>
