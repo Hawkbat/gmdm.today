@@ -95,9 +95,14 @@
                         const isToday = d.toDateString() === new Date().toDateString()
                         if (isToday) {
                             todayTweetContainer.append(tweetContainer)
-                            const day = /gmdm (\b.*\b!*)/.exec(t.text)[1]
-                            todayContainer.textContent = day
-                            foundToday = true
+                            try {
+                                const day = /gmdm (\b.*\b!*)/.exec(t.text)[1]
+                                todayContainer.textContent = day
+                                foundToday = true
+                            } catch (e) {
+                                console.error(e)
+                                prevTweetContainer.append(tweetContainer)
+                            }
                         } else {
                             prevTweetContainer.append(tweetContainer)
                         }
