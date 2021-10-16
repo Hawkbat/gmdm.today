@@ -96,7 +96,7 @@
                         if (isToday) {
                             todayTweetContainer.append(tweetContainer)
                             try {
-                                const day = /gmdm(?:\!|\.|\,)* (\b.+?\b!*)/.exec(t.text)[1]
+                                const day = /gmdm(?:\!|\.|\,)* (\b.+?\b!*)/i.exec(t.text)[1]
                                 todayContainer.textContent = day
                                 foundToday = true
                             } catch (e) {
