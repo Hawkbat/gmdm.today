@@ -90,6 +90,7 @@
                 .then(d => {
                     const tweets = d.data
                     if (!tweets) {
+                        foundToday = true
                         todayContainer.textContent = 'idk, Elon Musk broke the bot :('
                         return
                     }
