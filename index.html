@@ -89,6 +89,10 @@
                 .then(r => r.json())
                 .then(d => {
                     const tweets = d.data
+                    if (!tweets) {
+                        todayContainer.textContent = 'idk, Elon Musk broke the bot :('
+                        return
+                    }
                     return Promise.all(tweets.map(t => {
                         const tweetContainer = document.createElement('div')
                         const d = new Date(t.created_at)
